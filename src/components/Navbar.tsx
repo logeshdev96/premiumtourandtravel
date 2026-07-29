@@ -24,9 +24,7 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Destinations", href: "#destinations" },
-    { name: "Tours", href: "#tours" },
-    { name: "Experiences", href: "#experiences" },
+    { name: "Menu", href: "#menu" },
     { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ];
@@ -45,8 +43,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold tracking-tighter text-white uppercase flex items-center">
-                Wander<span className="text-amber-500">Luxe</span>
+              <span className="text-2xl font-bold tracking-tighter text-white flex items-center">
+                Dust & <span className="text-amber-500 ml-1">Dough</span>
               </span>
             </Link>
           </div>
@@ -62,7 +60,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <button className="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors">
-                Book Now
+                Order Now
               </button>
             </div>
           </div>
@@ -107,7 +105,7 @@ export default function Navbar() {
             ))}
             <div className="pt-4 pb-2">
               <button className="w-full bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-full text-base font-medium transition-colors">
-                Book Now
+                Order Now
               </button>
             </div>
           </div>
