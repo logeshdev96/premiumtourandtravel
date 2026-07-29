@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: "WanderLuxe | Premium Travel Experiences",
-  description: "Exclusive, curated travel experiences designed for the world's most discerning explorers.",
+  title: "Dust & Dough | Home Bakery",
+  description: "Home Bakery located at OPP - PKR ARTS, PARIYUR ROAD, GOBICHETTIPALAYAM.",
 };
 
 export default function RootLayout({

@@ -23,17 +23,17 @@ export default function Hero() {
     <div className="relative h-screen w-full overflow-hidden flex items-center justify-center">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-black/40 z-10" /> {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-[#4a0404]/60 z-10" /> {/* Maroon Overlay */}
         <video
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-full object-cover"
-          poster="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?q=80&w=2940&auto=format&fit=crop"
+          poster="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2944&auto=format&fit=crop"
         >
-          {/* High-quality travel stock video URL */}
-          <source src="https://cdn.pixabay.com/video/2020/05/26/40149-425251648_large.mp4" type="video/mp4" />
+          {/* High-quality bakery stock video URL */}
+          <source src="https://cdn.pixabay.com/video/2016/11/21/6462-192663071_large.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
@@ -44,26 +44,45 @@ export default function Hero() {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="space-y-6"
+          className="space-y-6 flex flex-col items-center"
         >
-          <motion.h2 variants={itemVariants} className="text-amber-500 font-medium tracking-widest uppercase text-sm md:text-base">
-            Discover the Extraordinary
-          </motion.h2>
+          <motion.div variants={itemVariants} className="mb-4">
+            <h2 className="text-amber-400 font-medium tracking-widest uppercase text-sm md:text-base mb-1">
+              Home Bakery
+            </h2>
+            <h3 className="text-amber-400 font-bold tracking-widest uppercase text-lg md:text-2xl">
+              DUST & DOUGH
+            </h3>
+            <p className="text-white mt-2 tracking-wider text-sm md:text-base">
+              YOU ARE INVITED TO
+            </p>
+          </motion.div>
 
-          <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight leading-tight">
-            Journey Beyond <br className="hidden md:block" /> Expectations
+          <motion.h1
+            variants={itemVariants}
+            className="text-6xl md:text-8xl lg:text-9xl font-bold text-amber-400 tracking-tight leading-tight py-4"
+            style={{
+              fontFamily: 'var(--font-playfair)',
+              textShadow: '0 0 20px rgba(251, 191, 36, 0.4), 2px 2px 4px rgba(0,0,0,0.5)'
+            }}
+          >
+            Grand <br /> Opening
           </motion.h1>
 
-          <motion.p variants={itemVariants} className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light">
-            Exclusive, curated travel experiences designed for the world&apos;s most discerning explorers.
-          </motion.p>
+          <motion.div variants={itemVariants} className="space-y-2 mt-8">
+            <p className="text-lg md:text-xl text-white font-medium tracking-wide">
+              MONDAY | 22 DEC, 2025 | AT 9.30 AM
+            </p>
+            <p className="text-lg md:text-xl text-amber-400 font-medium tracking-wide">
+              COME ON GET IT AND FEEL IT
+            </p>
+          </motion.div>
 
-          <motion.div variants={itemVariants} className="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(245,158,11,0.3)]">
-              Explore Destinations
-            </button>
-            <button className="bg-transparent border border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-full text-lg font-medium transition-all duration-300">
-              Watch Trailer
+          <motion.div variants={itemVariants} className="w-24 h-1 bg-amber-500 my-6 mx-auto rounded-full" />
+
+          <motion.div variants={itemVariants} className="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-amber-500 hover:bg-amber-600 text-[#4a0404] px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(245,158,11,0.5)] uppercase tracking-wider">
+              Explore Our Menu
             </button>
           </motion.div>
         </motion.div>
